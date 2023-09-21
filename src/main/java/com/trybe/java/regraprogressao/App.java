@@ -28,17 +28,17 @@ public class App {
       int grade = Integer.parseInt(scanner.nextLine());
       totalGrade += weight * grade;
     }
-    int avarage = totalGrade / 100;
+    float average = (float) totalGrade / 100;
 
     if (weightSum != 100) {
       System.out.println("O peso total precisa ser 100, tente novamente.");
     } else {
-      if (avarage < 85) {
+      if (average < 85) {
         System.out.println("Lamentamos informar que, com base na sua pontuação alcançada neste "
-            + "período, " + avarage + "%, você não atingiu a "
+            + "período, " + average + "%, você não atingiu a "
             + "pontuação mínima necessária para sua aprovação.");
       } else {
-        System.out.println("Parabéns! Você alcançou " + avarage + "%! "
+        System.out.println("Parabéns! Você alcançou " + average + "%! "
             + "E temos o prazer de informar que você obteve aprovação! ");
       }
     }
